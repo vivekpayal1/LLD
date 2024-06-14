@@ -32,4 +32,4 @@ export const LANG = {
           Consequatur Impedit Labore псевдоним obcaecati nulla ipsam`,
   },
 };
-console.log(LANG.hi)
+console.log(LANG.hi);

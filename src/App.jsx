@@ -7,7 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { useState } from "react";
 function App() {
   const [lang, setLang] = useState("en");
-  return ( 
+  return (
     <BrowserRouter>
       <header className="shadow-md h-10 flex items-center px-5 justify-between">
         <div className="logo">

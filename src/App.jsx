@@ -5,6 +5,7 @@ import Team from "./components/Team";
 import Login from "./components/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { useState } from "react";
+import Accordion from "./components/Accordion";
 function App() {
   const [lang, setLang] = useState("en");
   return (
@@ -16,6 +17,8 @@ function App() {
         <div className="flex">
           <nav>
             <Link to="/about">About</Link>
+            <Link to="/accordion">Accordion</Link>
+
           </nav>
           <select
             value={lang}
@@ -37,6 +40,8 @@ function App() {
           <Route path="/team" element={<Team />} />
         </Route>
         <Route path="/login" element={<Login />} />
+        <Route path="/accordion" element={<Accordion />} />
+
       </Routes>
     </BrowserRouter>
   );
